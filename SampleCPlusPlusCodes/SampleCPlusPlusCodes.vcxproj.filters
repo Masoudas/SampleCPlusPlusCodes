@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Pointers">
+      <UniqueIdentifier>{8e712fe6-7e7c-4cb7-93d8-e87dce783040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Arrays">
+      <UniqueIdentifier>{b65c3f3b-9977-4171-972f-0c8dadbc41ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Structures">
+      <UniqueIdentifier>{81d1bcf5-00cb-40fa-b8e3-82c666171476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\ReferenceTypes">
+      <UniqueIdentifier>{69b9fd21-7f95-41fb-9859-300b6d50328a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\HeaderFiles">
+      <UniqueIdentifier>{50ef813c-2e14-4632-9f89-60542cc84b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\DynamicMemoryAlloc">
+      <UniqueIdentifier>{d04d4f6f-2983-4159-8473-f9696abd3178}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CreatingVariableInsideFunction.cpp">
+      <Filter>Fichiers sources\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="FundamentalTypes.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerIncrement.cpp">
+      <Filter>Fichiers sources\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Fundamentals.cpp">
+      <Filter>Fichiers sources\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrays\Fundamentals.cpp">
+      <Filter>Fichiers sources\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerToFunctions.cpp">
+      <Filter>Fichiers sources\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicArrays.cpp">
+      <Filter>Fichiers sources\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Structures\Fundamentals.cpp">
+      <Filter>Fichiers sources\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceTypes\Fundamentals.cpp">
+      <Filter>Fichiers sources\ReferenceTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Structures\LinkedLists.cpp">
+      <Filter>Fichiers sources\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="New.cpp">
+      <Filter>Fichiers sources\DynamicMemoryAlloc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HeaderFiles\header.h">
+      <Filter>Fichiers sources\HeaderFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
