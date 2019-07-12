@@ -8,13 +8,34 @@ using namespace std;
 //	1- MyClass myClass{}; // Default
 //	2- MyClass myClass{width1=10, height1=5}; // Default
 // Classes are not referenced type. Hence, direct assignment leads to copying the class. Hence, pass by pointer.
-// In the basic notions, classes and structures are the same, except that structure members and methods are 
+// The basic notions of classes and structures are the same, except that structure members and methods are 
 // by default public, whereas for the class they are by default private.
 
-MyClass::MyClass(int width1, int length1)
+// Examples:
+//void main(void) {
+//	Classes::MyClass myOtherClass{}; // Invoking two classes of the same name, using the corresponding name spaces.
+//
+//	cout << MyClass::staticParam;	// Accessing the static parameter of the class. Can be accessed via dot by the instances.
+//
+//	MyClass myClass(5, 2);
+//	myClass.calculateArea();
+//	myClass.~MyClass();
+//	cout << myClass.staticParam;
+//
+//	MyClass myClass1{};
+//	myClass1 = myClass1;
+//	myClass.val = 20;
+//
+//	cout << myClass1.val << endl;
+//
+//	MyClass myClass2{ 10, 5 };
+//	myClass2.calculateArea();
+//}
+
+MyClass::MyClass(int width, int length)
 {
-	width = width1;
-	length = length1;
+	this->width = width;
+	this->length = length;
 }
 
 MyClass::MyClass(double width1, double length1) : width(width1), length(length1) {}; // Meh. Another way of instantiating a class.

@@ -19,6 +19,6 @@ void UsingNew(void) {
 		std::cout << "Pointer was allocated";
 	}
 
-	delete[] ptr;	// Delete the memory.
+	delete[] ptr;	// Delete the memory. Note that delete is ONLY FOR DELETING DYNAMICALLY ASSIGNED OBJECTs, OTHERWISE YOU GET AN ERROR.
 	// delete ptr;	// Delete the memory of a single element.
 }

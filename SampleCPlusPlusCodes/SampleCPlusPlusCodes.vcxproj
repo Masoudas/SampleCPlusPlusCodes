@@ -152,8 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrays\Fundamentals.cpp" />
+    <ClCompile Include="Classes\Assignment.cpp" />
     <ClCompile Include="Classes\Fundamentals.cpp" />
     <ClCompile Include="Classes\OperatorOverload.cpp" />
+    <ClCompile Include="Classes\TemplateForClass.cpp" />
     <ClCompile Include="CreatingVariableInsideFunction.cpp" />
     <ClCompile Include="DynamicArrays.cpp" />
     <ClCompile Include="Fundamentals.cpp" />
@@ -167,8 +169,11 @@
     <ClCompile Include="Structures\LinkedLists.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Classes\Assignment.h" />
+    <ClInclude Include="Classes\ConstantInstantiation.h" />
     <ClInclude Include="Classes\Fundamentals.h" />
     <ClInclude Include="Classes\OperatorOverload.h" />
+    <ClInclude Include="Classes\TemplatesForClass.h" />
     <ClInclude Include="HeaderFiles\header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
