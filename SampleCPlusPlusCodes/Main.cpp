@@ -1,30 +1,32 @@
-#include <array>
 #include <iostream>
+#include "Classes/Fundamentals.h"
 
-#include "HeaderFiles/header.h"	// Cool
+#include "Classes/OperatorOverload.h"
 
 using namespace std;
-// Didn't quite understand what this class does, but apparently it's the same as the normal arrays defined by the brackets, except that
-// it gives some extra functions
 
 void main(void) {
-	SimpleStruct example = { 1, "string" };
-	Child child = Child();
-	cout << child.var;
+	MyClass myClass(5, 2);
+	myClass.calculateArea();
+	myClass.~MyClass();
 
-	int len;
-	std::cout << "Length please: ";
-	std::cin >> len;
-	int* ptr;
-	ptr = new int[len];	// Allows dynamic memory allocation which otherwise would have been impossible.
+	MyClass myClass1{};
+	myClass1 = myClass1;
+	myClass.val = 20;
 
-	std::cout << "Another length please: ";
-	std::cin >> len;
-	int* ptr2;
-	ptr = new (std::nothrow) int[len];	// Allows dynamic memory allocation which otherwise would have been impossible.
+	cout << myClass1.val << endl;
 
-	if (ptr != nullptr) {
-		std::cout << "Pointer was allocated";
-	}
+	MyClass myClass2{ 10, 5 };
+	myClass2.calculateArea();
 
+	OverloadPlusSign overloadPlusSign{30};
+	OverloadPlusSign overloadPlusSign1{ 20 };
+
+	overloadPlusSign1 = overloadPlusSign1 + overloadPlusSign;
+	cout << overloadPlusSign1.val << endl;
+
+	overloadPlusSign1 += overloadPlusSign;
+	cout << overloadPlusSign1.val << endl;
+
+	
 }

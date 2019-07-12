@@ -31,6 +31,9 @@
     <Filter Include="Fichiers sources\DynamicMemoryAlloc">
       <UniqueIdentifier>{d04d4f6f-2983-4159-8473-f9696abd3178}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Classes">
+      <UniqueIdentifier>{6cba2566-17fe-4cf9-9e50-b85b2098ffeb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CreatingVariableInsideFunction.cpp">
@@ -69,10 +72,22 @@
     <ClCompile Include="New.cpp">
       <Filter>Fichiers sources\DynamicMemoryAlloc</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Fundamentals.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\OperatorOverload.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HeaderFiles\header.h">
       <Filter>Fichiers sources\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Fundamentals.h">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\OperatorOverload.h">
+      <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
