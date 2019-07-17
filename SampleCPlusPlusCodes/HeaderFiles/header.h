@@ -20,7 +20,7 @@
 // It happens Under two circumstances:
 //	1- When we have a reference/ pointer to said class.
 //	2- one or more functions has a the object/pointer/reference as a parementer, or as a return type.
-//  3- Friend classes are also forward defined.
+//  3- Friend classes are also forward defined. // I swear on never using firend classes.
 // You should always forward declare what you can -- don't #include unless it's necessary. Unnecessary #includes can lead to trouble
 class Forward;
 

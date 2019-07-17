@@ -25,6 +25,6 @@ void assignmentTest(void) {
 	std::cout << *(myClass1.ptr) << "It is the same here too" << endl;
 	
 
-	// To perform a deepcopy, one must overload the = operator. In there, we can use the memcopy to acually copy a variable.
+	// To perform a deepcopy, one must overload the = operator. In there, we can use the memcopy to acually copy a variable. We cannot directly use memcopy!
 }
 

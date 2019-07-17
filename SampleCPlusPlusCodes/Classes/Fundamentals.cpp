@@ -30,21 +30,25 @@ using namespace std;
 //
 //	MyClass myClass2{ 10, 5 };
 //	myClass2.calculateArea();
+
+// Move constructor allows us to copy the content of the original object into another, at which point the original class is completely destroyed from
+// the memory.
+// MyClass myClass2{ 10, 5 };
+// MyClass myClass1 = myClass2();
+
 //}
 
 MyClass::MyClass(int width, int length)
 {
 	this->width = width;
 	this->length = length;
+	this->val = width;
+	cout << "Inside the constructor of the base class with two integers" << endl;	
 }
 
 MyClass::MyClass(double width1, double length1) : width(width1), length(length1) {}; // Meh. Another way of instantiating a class.
 
 
-MyClass::~MyClass()
-{
-	cout << "PEACE" << endl;
-}
 
 void MyClass::print(int area) {
 	cout << "Area is: " << area << endl;

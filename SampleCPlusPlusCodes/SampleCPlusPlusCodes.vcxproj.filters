@@ -34,6 +34,9 @@
     <Filter Include="Fichiers sources\Classes">
       <UniqueIdentifier>{6cba2566-17fe-4cf9-9e50-b85b2098ffeb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Exceptions">
+      <UniqueIdentifier>{d0ea1dff-d40a-41c8-84c0-005c685215cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CreatingVariableInsideFunction.cpp">
@@ -84,6 +87,15 @@
     <ClCompile Include="Classes\Assignment.cpp">
       <Filter>Fichiers sources\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Inheritance.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\VirtualClasses.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\AbstractClass.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HeaderFiles\header.h">
@@ -102,6 +114,15 @@
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Assignment.h">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Inheritance.h">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\VirtualClasses.h">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\AbstractClass.h">
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
   </ItemGroup>
