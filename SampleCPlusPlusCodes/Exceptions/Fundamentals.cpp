@@ -1,4 +1,5 @@
-#include <iostream.h>
+#include <iostream>
+
 // First, note that exceptions are responses to run-time problems.
 // Exceptions provide a way to transfer control from one part of a program to another. 
 // C++ exception handling is built upon three keywords: try, catch, and throw.
@@ -11,7 +12,7 @@ using namespace std;
 
 
 
-void fundamentals(void) {
+void fundamentals(int input) {
 	try { // Try is the block in which we want to catch the exception.
 		if (input > 10 && input < 20) {
 			throw 10; // Here we throw an exception. By throwing an integer, we are just throwing a random number here, which 
@@ -20,7 +21,7 @@ void fundamentals(void) {
 		else if (input > 20 && input < 30) {
 			throw 'a';
 		}
-		//throw "An illegal value is given"; // For this third case, we don't have any handlers, so just the message is printed and that's it.
+		
 	}
 	catch (int e) {
 		cout << "Catching exception of integer type " << e << endl;
@@ -28,4 +29,32 @@ void fundamentals(void) {
 	catch (char e) {
 		cout << "Catching exception of char type " << e << endl;
 	}
+
+	try { 
+		throw 'a';
+	}
+	catch (...) {	// When the three dots are placed here, no matter what the type is, it is caught here.
+		cout << "Catching whatever type of exception we have" << endl;
+	}
+
+}
+
+// The most important point is that an exception must be handled, somewhere. not necessarily inside the same block.
+// Consider the following example. We see that the exception is caught in the catchException method.
+
+void division(int a, int b) {
+	if (a == 0) {
+		throw "Division by zero";
+	}
+}
+
+void catchException() {
+	try {
+		division(0, 1);
+	}
+	catch (const char* e) {
+		cout << e << endl; // The error is gracefully handled here.
+	}
+
+	cout << "The program continues after the exception is thrown";
 }
