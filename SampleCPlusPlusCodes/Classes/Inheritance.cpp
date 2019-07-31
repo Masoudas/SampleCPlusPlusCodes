@@ -10,11 +10,12 @@ DerivedClass::DerivedClass(int derivedClassVal, int width, int length) : MyClass
 	std::cout << "Inside the constructor of the derived class with one integers" << std::endl;
 }
 
+
 void Assignment(void) {
 	DerivedClass derivedClass{ 15, 15, 15 };
-	DerivedClass derivedClass1{ 5, 5, 5 };
-	MyClass myClass{ 10, 10 };
-
+	DerivedClass derivedClass1;
+	MyClass myClass{ 10, 10};
+	
 	myClass = derivedClass1;	// So apparently this assignment is acceptable. Then the fields of base class would be equal to that of derived class.
 	std::cout << myClass.val << std::endl;
 

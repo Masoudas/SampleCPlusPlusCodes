@@ -1,0 +1,18 @@
+See https://www.youtube.com/watch?v=gYmgbqGfv-8.
+See also https://www.youtube.com/watch?v=Y5Els11sY1A
+So CMake can be used to create cross-platform executables.
+The toturial is here. https://cmake.org/cmake-tutorial/
+
+The CMakeList.txt file is very important. Consider for example the case where want to make executables from
+two files: CMakeProject.cpp and CMakeProject.h inside the folder of CMake.
+
+The following two simple lines of code:
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+cmake_minimum_required (VERSION 3.8)
+
+# Add source to this project's executable.
+add_executable (CMakeProject "Tutorial.cpp" "Tutorial.h")
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+create an executable suitable for x64-debug. Naturally, we can call stuff from other projects in the solution and make everything work perfectly.
+
+As mentioned in the tutorial, we can add a version number to our program too.

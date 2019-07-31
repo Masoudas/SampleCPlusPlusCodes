@@ -1,0 +1,4 @@
+See this page https://www.hackeradam.com/installing-opencv-4-on-windows-10/
+And after this page: https://www.hackeradam.com/creating-an-opencv-4-project-in-visual-studio-2017/
+
+The documentation is provided in https://docs.opencv.org/2.4/index.html.

@@ -1,0 +1,2 @@
+See the following page
+https://docs.microsoft.com/en-us/cpp/build/creating-and-managing-visual-cpp-projects?view=vs-2019

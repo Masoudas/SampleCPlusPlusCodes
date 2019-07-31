@@ -7,22 +7,43 @@
 #include "Classes/AbstractClass.h"
 #include "Classes/VirtualClasses.h"
 
+  
+#include "stdafx.h" // This is the precompiled sign. See http://www.cplusplus.com/articles/1TUq5Di1/.
+#include <opencv2/opencv.hpp>
+
 #include <iostream>
+#include <string> 
+
+using namespace cv;
 using namespace std;
+#include <limits.h>
+#include "opencv2/core/hal/interface.h"
 
-void division(int a, int b) {
-	if (a == 0) {
-		throw "Division by zero";
-	}
+//typedef unsigned char  CV_8UC3;
+
+int main(int argc, char** argv)
+{
+	//// Read the image file
+	//Mat image = imread("C:\\something.jpg");
+	//Mat M(2, 2, CV_8UC3, Scalar(0, 0, 255));
+
+	//if (image.empty()) // Check for failure
+	//{
+	//	cout << "Could not open or find the image" << endl;
+	//	system("pause"); //wait for any key press
+	//	return -1;
+	//}
+
+	//String windowName = "My HelloWorld Window"; //Name of the window
+
+	//namedWindow(windowName); // Create a window
+
+	////imshow(windowName, image); // Show our image inside the created window.
+
+	//waitKey(0); // Wait for any keystroke in the window
+
+	//destroyWindow(windowName); //destroy the created window
+
+	//return 0;
 }
 
-void main() {
-	try {
-		division(0, 1);
-	}
-	catch (const char* e) {
-		cout << e << endl;
-	}
-
-	cout << "The program continues after the exception is thrown";
-}

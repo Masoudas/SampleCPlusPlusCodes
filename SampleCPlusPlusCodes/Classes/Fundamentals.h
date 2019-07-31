@@ -9,6 +9,8 @@ public:
 	static int staticParam; // Static members, can be accessed via instances of class, or through the class identifier itself.
 	int val = 10;
 	int* ptr = &val;
+	int width = 5;
+	int length = 4;
 	std::string str = "This string is shallow copied";
 	int arr[2] = { 1, 2 };
 
@@ -28,7 +30,6 @@ public:
 	void calculateArea(void);
 
 private:
-	int width=5, length=4;
 	void print(int);
 
 };

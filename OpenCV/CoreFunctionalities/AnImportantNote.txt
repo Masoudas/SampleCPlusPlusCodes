@@ -1,0 +1,2 @@
+All the methods discussed here are the basic functionalities of the library. Most of them are stored in the 
+<opencv2/core.hpp> library.

@@ -7,8 +7,11 @@ void swapRef(int*&, int*&);
 void Fundamentals(void) {
 	/* Reference types, as opposed to pointers, carry the address to their own memory space. Hence, they don't have the extra indirection.*/
 	int var = 10;
+	int var100 = 10;
 	int& ref = var;	// var is stored in some part of  the memory. ref now carries the address of that memory part. Pointers on the other hand,
 					// carry the address of anothe variable.
+	ref = var100;  
+	cout << var;	// What would be printed out here?
 
 	// While dereferencing, reference types don't need a dereferencing operator.
 	cout << ref << endl;
@@ -49,7 +52,10 @@ void Fundamentals(void) {
 }
 
 void swap(int& x, int& y) {
-	// When passing reference types as arguments, the address is passes, so the content is affected. Not passed by just value.
+	// When passing reference types as arguments, the address is passed, so the content is affected. Not passed by just value.
+	// Very important note: Defining int& const x is irrelevant, Because to change a reference means to change the address of a variable 
+	// in memory. But references don't allow us to do this in principle. Hence, it is meaningless to define int& ref x for example.
+	
 	int w;
 	w = x;
 	x = y;

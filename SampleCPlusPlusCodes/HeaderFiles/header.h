@@ -31,6 +31,7 @@ class Forward;
 //  2- When use an instance of that class.
 #include "Parent.h"
 #include "Instance.h"
+#include "../Classes/Inheritance.h"	// This is how we should referece the outside folders.
 #include <vector>
 
 // Declaration of the class

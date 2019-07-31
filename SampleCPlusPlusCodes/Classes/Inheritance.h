@@ -16,6 +16,7 @@ public:
 	// and then the derived class’s default constructor will be invoked.
 	// Why does this happen? Because we have a derived class, hence the members of the original class are there, and
 	// they need to be initialized.
+	// Don't forget that the constructors of the base class are not inherited!
 	
 	DerivedClass() { std::cout << "Inside the derived class" << std::endl; };
 	DerivedClass(int, int, int); // Calling the constructor of the base class is the same as C#. Note that

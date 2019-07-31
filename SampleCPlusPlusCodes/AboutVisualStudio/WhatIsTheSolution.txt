@@ -1,0 +1,6 @@
+
+The solution contains several projects, libraries and references. See this page:
+https://docs.microsoft.com/en-us/cpp/build/creating-and-managing-visual-cpp-projects?view=vs-2019
+
+To add third party libraries, use vcpkg. See:
+https://docs.microsoft.com/en-us/cpp/build/vcpkg?view=vs-2019

@@ -16,9 +16,6 @@
     <Filter Include="Fichiers sources\Pointers">
       <UniqueIdentifier>{8e712fe6-7e7c-4cb7-93d8-e87dce783040}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Arrays">
-      <UniqueIdentifier>{b65c3f3b-9977-4171-972f-0c8dadbc41ec}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Fichiers sources\Structures">
       <UniqueIdentifier>{81d1bcf5-00cb-40fa-b8e3-82c666171476}</UniqueIdentifier>
     </Filter>
@@ -37,6 +34,15 @@
     <Filter Include="Fichiers sources\Exceptions">
       <UniqueIdentifier>{d0ea1dff-d40a-41c8-84c0-005c685215cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\AboutVisualStudio">
+      <UniqueIdentifier>{52ebed01-53ea-4544-9cff-d5c31ff90aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\ArraysAndOtherStructures">
+      <UniqueIdentifier>{b65c3f3b-9977-4171-972f-0c8dadbc41ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\OpenCV">
+      <UniqueIdentifier>{6672f736-b79a-4a7a-be67-3dcb6502c056}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CreatingVariableInsideFunction.cpp">
@@ -53,9 +59,6 @@
     </ClCompile>
     <ClCompile Include="Fundamentals.cpp">
       <Filter>Fichiers sources\Pointers</Filter>
-    </ClCompile>
-    <ClCompile Include="Arrays\Fundamentals.cpp">
-      <Filter>Fichiers sources\Arrays</Filter>
     </ClCompile>
     <ClCompile Include="PointerToFunctions.cpp">
       <Filter>Fichiers sources\Pointers</Filter>
@@ -87,9 +90,6 @@
     <ClCompile Include="Classes\Assignment.cpp">
       <Filter>Fichiers sources\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Inheritance.cpp">
-      <Filter>Fichiers sources\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\VirtualClasses.cpp">
       <Filter>Fichiers sources\Classes</Filter>
     </ClCompile>
@@ -98,6 +98,21 @@
     </ClCompile>
     <ClCompile Include="Exceptions\Fundamentals.cpp">
       <Filter>Fichiers sources\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="ArraysAndOtherStructures\HashTables.cpp">
+      <Filter>Fichiers sources\ArraysAndOtherStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ArraysAndOtherStructures\Fundamentals.cpp">
+      <Filter>Fichiers sources\ArraysAndOtherStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Inheritance.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="GettingCompilerVersion.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,14 +134,36 @@
     <ClInclude Include="Classes\Assignment.h">
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Inheritance.h">
-      <Filter>Fichiers sources\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\VirtualClasses.h">
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
     <ClInclude Include="Classes\AbstractClass.h">
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="TutorialConfig.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Inheritance.h">
+      <Filter>Fichiers sources\Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AboutVisualStudio\WhatIsBuild.txt">
+      <Filter>Fichiers sources\AboutVisualStudio</Filter>
+    </Text>
+    <Text Include="AboutVisualStudio\WhatIsTheSolution.txt">
+      <Filter>Fichiers sources\AboutVisualStudio</Filter>
+    </Text>
+    <Text Include="OpenCV\InstallBase.txt">
+      <Filter>Fichiers sources\OpenCV</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TutorialConfig.h.in">
+      <Filter>Fichiers sources</Filter>
+    </None>
   </ItemGroup>
 </Project>

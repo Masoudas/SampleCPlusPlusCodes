@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{A9C9607D-F3C1-4AD3-91E0-C3D46DC8906E}</ProjectGuid>
+    <ProjectGuid>{ECDA503A-A68B-457A-8239-0B39D2F1E4AB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SampleCPlusPlusCodes</RootNamespace>
+    <RootNamespace>OpenCV</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,10 +70,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\x64\vc16\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -81,24 +83,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\OpenCV\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\x64\vc16\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\include</AdditionalLibraryDirectories>
-    </Link>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>
@@ -108,13 +95,26 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)opencv_world410.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x64\vc14\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d411d.lib;opencv_core411d.lib;opencv_dnn411d.lib;opencv_features2d411d.lib;opencv_flann411d.lib;opencv_gapi411d.lib;opencv_highgui411d.lib;opencv_imgcodecs411d.lib;opencv_imgproc411d.lib;opencv_ml411d.lib;opencv_objdetect411d.lib;opencv_photo411d.lib;opencv_stitching411d.lib;opencv_video411d.lib;opencv_videoio411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,18 +128,18 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\include</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -147,63 +147,36 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include</AdditionalIncludeDirectories>
-      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)opencv_world410.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x64\vc14\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d411.lib;opencv_core411.lib;opencv_dnn411.lib;opencv_features2d411.lib;opencv_flann411.lib;opencv_gapi411.lib;opencv_highgui411.lib;opencv_imgcodecs411.lib;opencv_imgproc411.lib;opencv_ml411.lib;opencv_objdetect411.lib;opencv_photo411.lib;opencv_stitching411.lib;opencv_video411.lib;opencv_videoio411.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArraysAndOtherStructures\Fundamentals.cpp" />
-    <ClCompile Include="ArraysAndOtherStructures\HashTables.cpp" />
-    <ClCompile Include="Classes\AbstractClass.cpp" />
-    <ClCompile Include="Classes\Assignment.cpp" />
-    <ClCompile Include="Classes\Fundamentals.cpp" />
-    <ClCompile Include="Classes\Inheritance.cpp" />
-    <ClCompile Include="Classes\OperatorOverload.cpp" />
-    <ClCompile Include="Classes\TemplateForClass.cpp" />
-    <ClCompile Include="Classes\VirtualClasses.cpp" />
-    <ClCompile Include="CreatingVariableInsideFunction.cpp" />
-    <ClCompile Include="DynamicArrays.cpp" />
-    <ClCompile Include="Exceptions\Fundamentals.cpp" />
-    <ClCompile Include="Fundamentals.cpp" />
-    <ClCompile Include="GettingCompilerVersion.cpp" />
-    <ClCompile Include="New.cpp" />
-    <ClCompile Include="PointerIncrement.cpp" />
-    <ClCompile Include="FundamentalTypes.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="PointerToFunctions.cpp" />
-    <ClCompile Include="ReferenceTypes\Fundamentals.cpp" />
+    <ClCompile Include="CoreFunctionalities\DrawAndAddText.cpp" />
+    <ClCompile Include="Fundamentals\AffineTransform.cpp" />
+    <ClCompile Include="Fundamentals\BasicDataTypes.cpp" />
+    <ClCompile Include="Fundamentals\ChangeToGrayScale.cpp" />
+    <ClCompile Include="Fundamentals\Filtering.cpp" />
+    <ClCompile Include="Fundamentals\OpenImageAndShow.cpp" />
+    <ClCompile Include="OpenCV.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="Structures\Fundamentals.cpp" />
-    <ClCompile Include="Structures\LinkedLists.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Classes\AbstractClass.h" />
-    <ClInclude Include="Classes\Assignment.h" />
-    <ClInclude Include="Classes\ConstantInstantiation.h" />
-    <ClInclude Include="Classes\Fundamentals.h" />
-    <ClInclude Include="Classes\Inheritance.h" />
-    <ClInclude Include="Classes\OperatorOverload.h" />
-    <ClInclude Include="Classes\TemplatesForClass.h" />
-    <ClInclude Include="Classes\VirtualClasses.h" />
-    <ClInclude Include="HeaderFiles\header.h" />
+    <ClInclude Include="CoreFunctionalities\DrawAndAddText.h" />
+    <ClInclude Include="Fundamentals\AffineTransform.h" />
+    <ClInclude Include="Fundamentals\BasicDataTypes.h" />
+    <ClInclude Include="Fundamentals\ChangeToGrayScale.h" />
+    <ClInclude Include="Fundamentals\Filtering.h" />
+    <ClInclude Include="Fundamentals\OpenImageAndShow.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="TutorialConfig.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="AboutVisualStudio\WhatIsBuild.txt" />
-    <Text Include="AboutVisualStudio\WhatIsTheSolution.txt" />
-    <Text Include="OpenCV\InstallBase.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TutorialConfig.h.in" />
+    <Text Include="Fundamentals\Install.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
