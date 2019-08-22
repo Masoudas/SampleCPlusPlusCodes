@@ -19,6 +19,12 @@
     <Filter Include="Source Files\CoreFunctionalities">
       <UniqueIdentifier>{9eb7b5d9-b36e-4938-9c34-07ef6c053666}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DoGDetector">
+      <UniqueIdentifier>{8bbae057-820f-46d3-b1ec-ab00f0045ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImageProcLib">
+      <UniqueIdentifier>{84096ea6-9970-4d4a-baf6-3b616997bd34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenCV.cpp">
@@ -45,6 +51,21 @@
     <ClCompile Include="Fundamentals\BasicDataTypes.cpp">
       <Filter>Source Files\Fundamentals</Filter>
     </ClCompile>
+    <ClCompile Include="DoGDetector\MinimaDetecor.cpp">
+      <Filter>Source Files\DoGDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="Fundamentals\OpenVideo.cpp">
+      <Filter>Source Files\Fundamentals</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagProcLib\DownUpSample.cpp">
+      <Filter>Source Files\ImageProcLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Fundamentals\PointerClass.cpp">
+      <Filter>Source Files\Fundamentals</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreFunctionalities\Utility.cpp">
+      <Filter>Source Files\CoreFunctionalities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -67,6 +88,24 @@
     </ClInclude>
     <ClInclude Include="Fundamentals\BasicDataTypes.h">
       <Filter>Source Files\Fundamentals</Filter>
+    </ClInclude>
+    <ClInclude Include="DoGDetector\MinimaDetecor.h">
+      <Filter>Source Files\DoGDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagProcLib\DownUpSample.h">
+      <Filter>Source Files\ImageProcLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PointerClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fundamentals\PointerClass.h">
+      <Filter>Source Files\Fundamentals</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Source Files\Fundamentals</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreFunctionalities\Utility.h">
+      <Filter>Source Files\CoreFunctionalities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

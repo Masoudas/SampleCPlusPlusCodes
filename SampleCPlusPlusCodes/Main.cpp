@@ -1,23 +1,18 @@
-#include <iostream>
-#include "Classes/DuplicateClass.h"
-#include "Classes/OperatorOverload.h"
-#include "Classes/ConstantInstantiation.h"
-#include "Classes/Fundamentals.h"
-#include "Classes/Inheritance.h"
-#include "Classes/AbstractClass.h"
-#include "Classes/VirtualClasses.h"
-
+//#include <iostream>
+//#include "Classes/DuplicateClass.h"
+//#include "Classes/OperatorOverload.h"
+//#include "Classes/ConstantInstantiation.h"
+//#include "Classes/Fundamentals.h"
+//#include "Classes/Inheritance.h"
+//#include "Classes/AbstractClass.h"
+//#include "Classes/VirtualClasses.h"
+#include "Templates/Fundamentals.h"
   
-#include "stdafx.h" // This is the precompiled sign. See http://www.cplusplus.com/articles/1TUq5Di1/.
-#include <opencv2/opencv.hpp>
 
-#include <iostream>
-#include <string> 
+//#include <string> 
 
-using namespace cv;
-using namespace std;
-#include <limits.h>
-#include "opencv2/core/hal/interface.h"
+//using namespace std;
+//#include <limits.h>
 
 //typedef unsigned char  CV_8UC3;
 
@@ -45,5 +40,7 @@ int main(int argc, char** argv)
 	//destroyWindow(windowName); //destroy the created window
 
 	//return 0;
+
+	invokeTemplateClass();
 }
 

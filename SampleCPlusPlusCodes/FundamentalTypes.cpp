@@ -62,6 +62,11 @@ void FundamentalTypes(void) {
 	w = w + x;	// Promotion happens
 	w2 = w2 + w; // Promotion
 	w = w + w2;
+
+	// Question: Can we define a variable constant and then assign to it later? I don't think so. A constant must be assigned at initialization
+	//const int x;
+	//x = 5; // wrong
+	// Question: Why not use macros instead of constants? One important reason that comes to mind is that as opposed to macros, constants have type!
 }
 
 

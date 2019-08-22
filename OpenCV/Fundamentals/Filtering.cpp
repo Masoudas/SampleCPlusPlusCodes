@@ -28,6 +28,7 @@ char window_name[] = "Filter Demo 1";
 
 void GaussianFilter(const char* address, const char* addressToWrite) {
 	/// Load the source image
+	/// Very important note: Because most filters are symmetric, they must have odd length!
 	src = imread(address);
 	resizeWindow(window_name, src.rows/3, src.cols / 3);
 

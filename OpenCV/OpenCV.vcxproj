@@ -158,21 +158,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CoreFunctionalities\DrawAndAddText.cpp" />
+    <ClCompile Include="CoreFunctionalities\Utility.cpp" />
+    <ClCompile Include="DoGDetector\MinimaDetecor.cpp" />
     <ClCompile Include="Fundamentals\AffineTransform.cpp" />
     <ClCompile Include="Fundamentals\BasicDataTypes.cpp" />
     <ClCompile Include="Fundamentals\ChangeToGrayScale.cpp" />
     <ClCompile Include="Fundamentals\Filtering.cpp" />
     <ClCompile Include="Fundamentals\OpenImageAndShow.cpp" />
+    <ClCompile Include="Fundamentals\OpenVideo.cpp" />
+    <ClCompile Include="Fundamentals\PointerClass.cpp" />
+    <ClCompile Include="ImagProcLib\DownUpSample.cpp" />
     <ClCompile Include="OpenCV.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreFunctionalities\DrawAndAddText.h" />
+    <ClInclude Include="CoreFunctionalities\Utility.h" />
+    <ClInclude Include="DoGDetector\MinimaDetecor.h" />
     <ClInclude Include="Fundamentals\AffineTransform.h" />
     <ClInclude Include="Fundamentals\BasicDataTypes.h" />
     <ClInclude Include="Fundamentals\ChangeToGrayScale.h" />
     <ClInclude Include="Fundamentals\Filtering.h" />
     <ClInclude Include="Fundamentals\OpenImageAndShow.h" />
+    <ClInclude Include="Fundamentals\PointerClass.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="ImagProcLib\DownUpSample.h" />
+    <ClInclude Include="PointerClass.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>

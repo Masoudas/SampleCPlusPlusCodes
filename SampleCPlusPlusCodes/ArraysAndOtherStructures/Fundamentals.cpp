@@ -12,6 +12,14 @@ void OneDArrays(void) {
 		std::cout << *x << "\n";
 	}
 
+	// Here's something very interesting. Suppose we define a constant array. If we copy it normally into another integer, then it's ok.
+	// However, when referencing it, it should be constant
+	const int arr[2] = { 1, 2 };
+	int elem = arr[0];
+
+	const int& elem0 = arr[0];
+	// int& elem0 = arr[0]; This would be wrong.
+
 }
 
 void TwoDArray(void) {

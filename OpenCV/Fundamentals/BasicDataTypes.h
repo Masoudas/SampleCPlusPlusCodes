@@ -3,4 +3,6 @@
 void MatrixType();
 void PointerType(const char* address);
 void Size(const char* address);
+void Rectangle();
+void VectorType();
 #endif

@@ -1,7 +1,7 @@
 // See https://docs.opencv.org/2.4/doc/tutorials/core/mat_the_basic_image_container/mat_the_basic_image_container.html.
 
-#include "../stdafx.h" // This is the precompiled sign. See http://www.cplusplus.com/articles/1TUq5Di1/.
-#include <opencv2/opencv.hpp>
+//#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>	// This header contains the imread, matrix and other stuff.
 #include <iostream>
 #include <string> 
 
@@ -17,6 +17,7 @@ void OpenAndShow(const char* path, int windowSize, int* ROI)
 
 	//// Read the image file
 	Mat image = imread(path);
+	//Mat image = imread(path, IMREAD_GRAYSCALE); Load image as gray scale
 	Mat copyImage(image);	// The copy constructor.
 	// The above form of constructor shallow copies the class. For a deepcopy, we need to use two methods:  clone() and copyTo() 
 	Mat deepImageCopy = image.clone();
@@ -42,6 +43,12 @@ void OpenAndShow(const char* path, int windowSize, int* ROI)
 	waitKey(0); // Wait for any keystroke in the window
 
 	destroyWindow(windowName); //destroy the created window
+}
+
+
+void openingAnManipulatinInFloatPoint() {
+	https://stackoverflow.com/questions/22688117/writing-a-float-image-in-opencv-with-pixel-values-bigger-than-1
+	https://stackoverflow.com/questions/15130162/how-to-access-pixel-values-of-cv-32f-cv-64f-mat
 }
 
 
@@ -116,6 +123,7 @@ void OtherInitializers(void) {
 											// because we can't display this matrix, and none of the basic methods seem to work for this too.
 
 	Mat M2 = Mat::eye(4, 4, CV_64F);
+	
 	cout << "M2 = " << endl << " " << M2 << endl << endl;
 
 	Mat M3 = Mat::ones(2, 2, CV_32F);

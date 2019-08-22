@@ -1,0 +1,1 @@
+See https://electrofriends.com/articles/jni/part-2-jni-visual-studio-setup-dll-project/

@@ -1,6 +1,8 @@
 // Hash tables are also known as dictionaries.
 // See also http://www.cplusplus.com/reference/unordered_map/unordered_map/
 
+#include "stdafx.h"
+ 
 #include <iostream>
 #include <map>
 #include <unordered_map>

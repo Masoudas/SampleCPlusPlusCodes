@@ -40,8 +40,8 @@
     <Filter Include="Fichiers sources\ArraysAndOtherStructures">
       <UniqueIdentifier>{b65c3f3b-9977-4171-972f-0c8dadbc41ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\OpenCV">
-      <UniqueIdentifier>{6672f736-b79a-4a7a-be67-3dcb6502c056}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Templates">
+      <UniqueIdentifier>{0132f16f-5ef7-4bb5-a3da-3754ffe74d0c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -105,14 +105,20 @@
     <ClCompile Include="ArraysAndOtherStructures\Fundamentals.cpp">
       <Filter>Fichiers sources\ArraysAndOtherStructures</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="GettingCompilerVersion.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Fundamentals.cpp">
+      <Filter>Fichiers sources\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\ConstraintTemplate.cpp">
+      <Filter>Fichiers sources\Templates</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Inheritance.cpp">
       <Filter>Fichiers sources\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="GettingCompilerVersion.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="EnumWithClasses.cpp">
+      <Filter>Fichiers sources\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -140,11 +146,11 @@
     <ClInclude Include="Classes\AbstractClass.h">
       <Filter>Fichiers sources\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="TutorialConfig.h">
-      <Filter>Fichiers sources</Filter>
-    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="ArraysAndOtherStructures\stdafx.h">
+      <Filter>Fichiers sources\ArraysAndOtherStructures</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Inheritance.h">
       <Filter>Fichiers sources\Classes</Filter>
@@ -157,13 +163,5 @@
     <Text Include="AboutVisualStudio\WhatIsTheSolution.txt">
       <Filter>Fichiers sources\AboutVisualStudio</Filter>
     </Text>
-    <Text Include="OpenCV\InstallBase.txt">
-      <Filter>Fichiers sources\OpenCV</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TutorialConfig.h.in">
-      <Filter>Fichiers sources</Filter>
-    </None>
   </ItemGroup>
 </Project>
