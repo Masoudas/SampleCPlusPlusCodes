@@ -1,0 +1,11 @@
+So we need a package manager for C++ libraries, especially third party libraries.
+For this we can use vcpkg. See https://docs.microsoft.com/en-us/cpp/build/vcpkg?view=vs-2019
+
+To install it, we need to:
+1- Clone the source from github.
+2- run the bootstrap-vcpkg.bat (Windows) or ./bootstrap-vcpkg.sh (Linux, macOS)
+
+vcpkg search shows the list of all available packages. vcpkg install is used for installing a package.
+The package is compiled using the c++ compiler available on the machine.
+
+
