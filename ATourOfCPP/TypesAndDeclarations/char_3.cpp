@@ -1,8 +1,8 @@
 /**
  * We have the following set of chars:
  * 
- * char: is the (usually) 8 bit entity. Guaranteed to have at least 8 bits. It's used for supporting ASCII (is it usaully signed?)
- * char maybe signed or unsigned.
+ * char: Guaranteed to have at least 8 bits in all platforms. It's used for supporting ASCII.
+ * char maybe signed or unsigned by itself is not guaranteed to be signed or onsigned.
  * signed char: a signed version of char.
  * unsigned char: an unsigned version.
  * 
@@ -20,9 +20,9 @@
  * 
  * Note that case from int to char is also possible, because chars are still integer types.
  * void digits(){for (int i=0; i!=10; ++i)cout << static_cast<char>('0'+i);
- * The character literal '0' is converted to its integervalue andiis added.  
- * The resultingintis then converted to acharand written tocout.  
- * Plain '0'+i is an int, so if I had left out thestatic_cast<char>, the output would have been something like 
+ * The character literal '0' is converted to its integer value and is added.  
+ * The resulting int is then converted to a char and written to cout.  
+ * Plain '0'+i is an int, so if I had left out the static_cast<char>, the output would have been something like 
  * 48,49,and so on, rather than 0,1, and so on.
  * 
  * 
@@ -31,12 +31,13 @@
  * As we said the following cast is undefined:
  * char c = 255;
  * int i = c;
- * 
  * Because we don't know whether c (which is all one) is actually -1 or 255.
+ * 
+ * Naturally of course int i = 'c' is not allowed.
  * 
  * Character literals, confined to '', are of course in char.
  * 
- * We may also have char v1[] = "a", which contains as we know to chars, 'a' and '\0'.
+ * We may also have char v1[] = "a", which contains as we know two chars, 'a' and '\0'.
  */
 
 /**
@@ -52,9 +53,10 @@ void f(char c, unsigned char uc, signed char sc){
 void signedToUnsigned(){
     signed char sc = -160;
     unsigned char uc = sc;
-    uc == 116; // (because 256-160==116). 160 + 116 = 256.
+    if (uc == 116) cout << "The conversion from signed to unsigned"; // (because 256-160==116). 160 + 116 = 256.
     
     char count[256]; 
-    ++count[sc];  //likely disaster: out-of-range access
+    ++count[sc];  //likely disaster: out-of-range access, because pointer has to go far back from the starting
+                  // point. So no direct conversion from signed to unsigned occurs.
     ++count[uc];                     //OK
 }

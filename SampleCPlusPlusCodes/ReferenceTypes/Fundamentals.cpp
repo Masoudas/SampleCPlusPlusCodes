@@ -7,7 +7,7 @@ void swapRef(int*&, int*&);
 void Fundamentals(void) {
 	/* Reference types, as opposed to pointers, carry the address to their own memory space. Hence, they don't have the extra indirection.*/
 	int var = 10;
-	int var100 = 10;
+	int var100 = 100;
 	int& ref = var;	// var is stored in some part of  the memory. ref now carries the address of that memory part. Pointers on the other hand,
 					// carry the address of anothe variable.
 	ref = var100;  

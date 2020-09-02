@@ -4,7 +4,7 @@
  * of variables.
  * 
  * As we know, the size of each object is returned in terms of char. Hence, sizeof(int) == 4
- * means a character is four bytes.
+ * means an int is four bytes.
  * 
  * 
  * We always have 

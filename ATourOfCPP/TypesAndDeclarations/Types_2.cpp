@@ -11,7 +11,7 @@
  * bool b {10}; // b would be true.
  * 
  * A pointer can also be converted to bool. A nullptr is false, and other values are true.
- * Though we prefer explicit comparison.
+ * Though we prefer explicit comparison (although Mr. Bjarne doesn't!)
  * double* p;
  * if (p){}; // Equivalent to p!=nullptr
  * 

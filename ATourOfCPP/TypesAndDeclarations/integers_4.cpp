@@ -1,23 +1,23 @@
 /**
  * Integers come in three flavours, int, unsigned int and signed int.
- * 
  * They also come in four forms, short int, int, long int, long long int.
  * 
  * short is guaranteed at least 16 bits, long at least 32 bits.
  * 
+ * Default value is a suitable representation of zero for all types.
+ *  
  * Note that short is a synonym for short int.
  * unsigned is sysnonym fir unsigned int, and singed for signed int.
  * 
  * Using an unsigned instead  of  an int to  gain  one  more  bit  to  represent  positive
- * integers  is  almost  never a good  idea. 
- * Attempts  to  ensure  that  some  values  are  positive  by declaring  variables unsigned 
- * will  typically  be defeated by the implicit conversion rules.
+ * integers  is  almost  never a good  idea. Attempts  to  ensure  that  some  values  are  
+ * positive  by declaring  variables unsigned will  typically  be defeated by the implicit conversion rules.
  * 
  * Unlike plainchars, plainints are always signed.  The signed int 
  * types are simply more explicit synonyms for their plain int counterparts, rather than different types.
  * 
  * the <cstdint> provide us with some type definition.
- * int64_t is a signed 64 bit. uint_fast16_t is an unsigned int with exactly 8 bits, supposedly the fast
+ * int64_t is a signed 64 bit. uint_fast16_t is an unsigned int with exactly 8 bits, supposedly the fastest
  * of such type, and so forth.
  * 
  * The literals come in three forms, decimal, octal and hexadecimal. Decimals are like 123123211.
