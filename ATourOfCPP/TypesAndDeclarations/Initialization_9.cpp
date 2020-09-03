@@ -12,7 +12,8 @@
  *  is allowed, but not int to char.
  * 2- A floating-point value cannot be converted to another floating-point type that cannot hold its value. 
  *  For example,float to double is allowed, but not double to float.
- * 3- A floating-point value cannot be converted to an integer type (really!!?)
+ * 3- A floating-point value cannot be converted to an integer type. Hence int v {1.3} throws an error,
+ *  whereas normally it would be truncated!
  * 4- An integer value cannot be converted to a floating-point type.
  * 
  */
@@ -27,14 +28,15 @@ void f(double val, int val2){
     int x4 {2.0};//error : no double to int value conversion//...
 }
 
-/* When using auto, however, we prefer '=', because of ambiguity between single list and int
-* int v {99}; Is it an int, or a list?
+/* When using auto, however, we prefer '=', (Me: because of ambiguity between single list and int
+* auto v {99}; Is it an int, or a list? It is actually a list, but we might think of it as int.)
 */
 
 /**
  * For class types, we know that _class c1(10) calls the constructor with one argument (function
- * style construction), whereas _class c1 {10} (default initialization) initializes the type with value 10!
- * With classes, when we want to use a constructor, we better directly use new expression and call the constructor.
+ * style construction), whereas _class c1 {10} (default initialization) initializes the type with value 10
+ * (Me: Its field, which should be an integer I guess)!
+ * With classes, when we want to use a constructor, we better directly use the 'new' keyword and call the constructor.
  * 
  * Most types however don't have this problem. For example vector<String> v1("String") is wrong, 
  * whereas vector<string> v2{"String"} is fine.
@@ -45,7 +47,7 @@ void f(double val, int val2){
  * created on heap or free store), and global names, namespace variables, local static or
  * static members.
  * 
- * All the latter are initialized with {}.
+ * All the latter are initialized with {} if not already initialized.
  * 
  * The local vars and objects are not initialized, unless they're user defined types with constructors.
  * 
