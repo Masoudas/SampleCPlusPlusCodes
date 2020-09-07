@@ -1,15 +1,18 @@
 /**
  * A syntax like this initializes an array without specifying its size.
- * 
  * int a[] = {1,2,3};
  * 
  * If initializer specifies not enough arguments, the rest are initialize to zero.
+ * All array elements that are not initialized explicitly are zero-initialized. 
  * int a[4] = {1} // {1, 0, 0, 0}
  * 
  * We also have:
  * int a[3] = {0}; // valid C and C++ way to zero-out a block-scope array
  * int a[3] = {}; // invalid C but valid C++ way to zero-out a block-scope array
  * 
+ * What happens to an array with no initialization? The best I've found so far is that
+ * it has random values! But not sure.
+ * int a[5];
  * 
  * There's no built-in copy mechanism for arrays. Hence, initialization with other arrays
  * or a direct copy is not possible.

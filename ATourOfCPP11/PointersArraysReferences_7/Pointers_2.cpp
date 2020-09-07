@@ -19,9 +19,4 @@
  * V* v;
  * T* p = static_cast<V*>v; // unsafe
  * 
- * Functions using void∗ pointers typically exist at the very lowest level of the system, 
- * where real hardware resources are manipulated.  For example:
- * void∗my_alloc(siz e_t n);          //allocate n bytes from my special heap.
- * Occurrences of void∗s at higher levels of the system should be viewed with great suspicion because
- * they are likely indicators of design errors.
  * 

@@ -1,4 +1,9 @@
 /**
+ * Functions using void∗ pointers typically exist at the very lowest level of the system, 
+ * where real hardware resources are manipulated.  For example:
+ * void∗my_alloc(siz e_t n);          //allocate n bytes from my special heap.
+ * Occurrences of void∗s at higher levels of the system should be viewed with great suspicion because
+ * they are likely indicators of design errors.
  * Sometimes we want to refer to memory address, without knowing the underlying type. In this
  * case, we use void*. Pointer to functions and pointer to member cannot.
  * 
