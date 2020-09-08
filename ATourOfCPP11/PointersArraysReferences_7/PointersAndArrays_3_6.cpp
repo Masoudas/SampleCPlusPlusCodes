@@ -95,3 +95,27 @@ void f(char v[]){
     // for (auto c : v){} This will not work
     
 }
+
+/** ---------------------------------------------------------------------- **
+ * Going back to arrays and pointers, we now know that:
+ * int a[] = {1,2};
+ * 
+ * int *b = a;
+ * 
+ * This is because a is a 1D array of pointers to integers. Now what is &a[0]? It's the address
+ * of first integer, hence again int *b = &a[0]. 
+ * 
+ * Now what is &a? It's the address of a pointer to a 1D array of 2 pointers. Hence, 
+ * int (*c)[5] = a;
+ * 
+ * Now consider int a[2][3]; 
+ * 
+ * What is a? It's a 1D array of pointers to arrays of 3 ints. 
+ * 
+ * What is a[0]? It's value is a 1D array of pointer to int (or a 1D array). hence int *x = a;
+ * What is &a? It's the address to an array of 1D pointers to array of 3 ints. Hence int (*a)[2][3] = &a;
+ * What is &a[0]? It's the address to an array of 3 ints. Hence, int (*x)[3] = a;
+ * 
+ */
+
+ 

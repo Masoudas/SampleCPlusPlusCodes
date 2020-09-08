@@ -4,6 +4,13 @@
  * 
  * Array size must be a constant expression (of course, because with arrays, we need to assign a
  * specific size in memory). For variable expressions, we need to use vectors.
+ * 
+ * (Me: for consistency with n dimensional arrays, it may be useful to think of T[size] like this:
+ * T is a 1D array of pointers to integers. This way, we can see why int *p = a; 
+ * This is because a is a pointer (at location zero). Hence, int *p = a + 1; 
+ * Moreover, int (*p)[size] = &T, because T is an array of pointer to 5 ints. 
+ 
+ * JUST DON'T FORGET THAT a[][][] is always an array of 1D pointers. That's the golden rule.)
  */ 
 
 void f(int n){
