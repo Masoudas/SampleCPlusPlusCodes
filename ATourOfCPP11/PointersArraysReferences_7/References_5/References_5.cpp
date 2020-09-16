@@ -14,6 +14,9 @@
  * 
  * The main use of references is for specify-ing arguments and return values for functions 
  * in general and for overloaded operators (Chapter 18)in particular.  For example:
+ * 
+ * Just to further stress, references need to be initialized at the point of declaration:
+ * int &a; // This is invalid!
  */
 template<class T>
 class vector {

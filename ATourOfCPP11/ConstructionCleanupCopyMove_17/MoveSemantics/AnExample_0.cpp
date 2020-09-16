@@ -41,6 +41,7 @@ private:
 public:
     Person(const String& p){
         person = p;    // Here, the copy constructor is called. Why? Because person has not been initialized yet!
+                        // As we know, class members are not initialized by default (see Chapter _16, Constructors_4, _0)
     };
     ~Person();
 };

@@ -20,7 +20,7 @@ class Example
 private:
 
 public:
-    Example();  // Default constructor is not supplied by default!
+    Example() = default;  // Default constructor is not supplied by default!
 
     Example(const Example &t){
         std::cout << "Inside Copy Constructor" << std::endl;
