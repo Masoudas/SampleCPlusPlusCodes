@@ -1,5 +1,5 @@
 /**
- * There's a clockwise spiral rule, which I think is equivalent to the following:
+ * !!!THIS IS INCOMPLETE AND SHOULD BE IMPROVED!!!
  * 
  * There were a couple of rules. 
  * 1- Start with the type name (or where it should be).
