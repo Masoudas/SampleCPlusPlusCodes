@@ -6,6 +6,7 @@
 #include <iostream>
 #include <map>
 #include <unordered_map>
+#include <iostream>
 
 typedef std::map<std::string, int> dictionary;
 
@@ -28,7 +29,7 @@ void UsingHashTables() {
 	removeElements(&dict);
 
 	for (auto key : dict) {
-		cout << key.first << " and " << key.second << endl;
+	//	cout << key.first << " and " << key.second << endl;
 	}
 
 	// Notice that an unordered_map object (i.e., the iterator of the dictionary class) makes no guarantees on which 
@@ -36,7 +37,11 @@ void UsingHashTables() {
 	// But, in any case, the range that goes from its begin to its end covers all the elements in the container (or the bucket), 
 	// until invalidated.
 	for (auto it = dict.begin(); it != dict.end(); it++) {
-		cout << "key is " << it->first << " and value is " << it->second << endl;
+	//	cout << "key is " << it->first << " and value is " << it->second << endl;
 	}
 }
 
+
+int main() {
+	UsingHashTables();
+}

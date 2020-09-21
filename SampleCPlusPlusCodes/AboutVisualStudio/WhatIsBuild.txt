@@ -1,2 +1,5 @@
 See the following page
 https://docs.microsoft.com/en-us/cpp/build/creating-and-managing-visual-cpp-projects?view=vs-2019
+
+Check this blog post for a complete guide:
+https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/

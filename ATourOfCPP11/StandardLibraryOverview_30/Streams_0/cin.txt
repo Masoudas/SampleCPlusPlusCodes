@@ -1,0 +1,22 @@
+With cin, we can put values inside any type that supports the stream operator overload.
+Note how an int is set, or any other type. This of course is very dangerous, but in any case.
+
+The command line stops on the enter.
+
+int t;
+cin >> t;
+
+char c;
+cin >> c;	Note that here only the first char is set, and then nothing else is set there. If for example enter is pressed before
+		assigning a char, cin waits till we put an actuall carachter.
+
+string str;
+cin >> str;
+
+We can also say:
+cin >> str;
+
+We can also say
+cin >> a >> b;	Two variables are set either using space, tab or enter.
+
+We normally prefer to use getline(cin, str) to get a line from the command line.
