@@ -1,4 +1,8 @@
 /**
+ * The new operator takes a type and returns a pointer to that type, created on the heap. This
+ * memory is not initialized, unless we initialize it (for example in the new operator using the bracket
+ * operator).
+ * 
  * Often, we want to create objects independently of the scope they're defined in. 
  * This can be done using new. These objects are said to be on the heap, or free store,
  * or dynamic memory.
@@ -7,7 +11,7 @@
  * As we remember, for example the array size on the stack must be a constant (or constant expression?).
  * (Apparently, memory allocated to pointer is stored on the heap).
  * 
- * How does one create the built-in types on the heap? Using the new operator returns a pointer,
+ * How does one create the built-in types on the heap? Using the new operator
  * hence an expression like this:
  * int* ptr = new int; 
  * 

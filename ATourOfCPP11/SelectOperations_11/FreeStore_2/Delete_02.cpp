@@ -50,4 +50,13 @@ delete[] p; // but sloppy() does not own *p
  * reference, we want to just move the object, and steal the resources of the first one.
  * 
  * The latter is the RAII principle, better known as resource allocation is initialization.
+ * 
+ * Here's another interesting way to look at this. We can express with we intend to with resources as follows:
+ * 
+ * Local objects. The C++ runtime as the owner automatically manages the lifetime of these resources. The same holds for global objects or members of a class. The guidelines calls them scoped objects.
+ * References: I'm not the owner. I only borrowed the resource that cannot be empty.
+ * Raw pointers: I'm not the owner. I only borrowed the resource that can be can be empty. I must not delete the resource.
+ * std::unique_ptr: I'm the exclusive owner of the resource. I may explicitly release the resource.
+ * std::shared_ptr: I share the resource with other shared ptr. I may explicitly release my shared ownership.
+ * std::weak_ptr: I'm not the owner of the resource but I may become temporary the shared owner of the resource by using the method std::weak_ptr::lock.
  */ 
