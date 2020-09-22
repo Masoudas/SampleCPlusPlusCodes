@@ -7,6 +7,8 @@
  * This can be done using new. These objects are said to be on the heap, or free store,
  * or dynamic memory.
  * 
+ * Note that new throws bad_alloc exception if memory does not exist.
+ * 
  * Also don't forget that Dynamically allocating arrays is required when your dimensions are given at runtime.
  * As we remember, for example the array size on the stack must be a constant (or constant expression?).
  * (Apparently, memory allocated to pointer is stored on the heap).

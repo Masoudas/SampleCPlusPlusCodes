@@ -60,3 +60,4 @@ delete[] p; // but sloppy() does not own *p
  * std::shared_ptr: I share the resource with other shared ptr. I may explicitly release my shared ownership.
  * std::weak_ptr: I'm not the owner of the resource but I may become temporary the shared owner of the resource by using the method std::weak_ptr::lock.
  */ 
+
