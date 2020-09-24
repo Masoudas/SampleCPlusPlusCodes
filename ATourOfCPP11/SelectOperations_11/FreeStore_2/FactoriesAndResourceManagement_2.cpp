@@ -13,4 +13,4 @@
  * If the object is cheap to copy and the caller should be the owner of the widget, use an object. If not cheap to copy, use an std::unique_ptr.
  * If the callee wants to manage the lifetime of the widget, use an std::shared_ptr
  * 
- * 
+ */

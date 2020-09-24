@@ -1,6 +1,7 @@
 /**
-When mixing an unsigned and signed integral variable of the same type, the result is promoted to unsigned. Why is
-this the case? Because supposedly the unsigned has a larger range than the signed variable.
+When mixing an unsigned and signed integral variable (starting from int), the result is promoted to unsigned. Why is
+this the case? Because supposedly the unsigned has a larger range than the signed variable. Note that the bytes
+are not changed, only their interpretation.
 
 int x = -10;
 unsigned int y = 5;
@@ -14,4 +15,12 @@ Note that the same situation happens with literals.
 
 cout << -10 + 10u << endl; Here, 10 is promoted to uint. However, the result still fits a uint, so we're good.
 cout << -10 + 9u << endl; Here, the result is a gigantic positive number, because we're assigning a negative value to an unsigned literal.
+
+What would be printed here:
+
+unsigned long int x = 0;
+--x; ++x; std::cout << x;
+
+Well, first x becomes 2^(w+1) - 1, where w is the size of long int. Then we add 1 and it becomes 2^(w+1),
+then it is implicity casted to long int, resulting in ZERO!!!
 */

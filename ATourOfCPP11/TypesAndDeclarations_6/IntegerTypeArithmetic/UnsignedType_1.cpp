@@ -1,5 +1,13 @@
 /**
-So here's the deal. unsigned types round, if a negative value is assigned to them, or the result
+So here's the deal. 
+
+If an unsigned integer type (including char) overflows, the results is module 256.
+char c = 255;
+c++;
+std::cout << (int)c;    // prints zero.
+Why is it the case? Because the result is promoted to int. And then this int is implictly casted back to char.
+
+unsigned types round, if a negative value is assigned to them, or the result
 of an operation is negative. In other words, in case of overflow, the result would be 2^w modulo of that negative number 
 (or 2^w - x). This would be called underflow by the way.
 
@@ -53,4 +61,21 @@ we promote unsigned to singed. Hence, n might actually fall in range! However, t
 We also have this example, assuming char is 8 bits:
 for (char c = 0; c < 300; c++)
 Whether c is signed or unsigned, it will never achieve 300. Hence, this loop runs for ever.
+*/
+
+/**
+ * As another example, say how many times this loop is repeated? */
+void f(){
+      unsigned char half_limit = 150;
+
+      for (unsigned char i = 0; i < 2 * half_limit; ++i)
+      {
+      // do something;
+      }
+}
+
+/**
+ * The answer would be infinite. This is because 2 * half_limit is promoted to int. Hence, i is also promoted to int.
+ * However, after it reaches 255, another increment sets it to 0. Hence, this loop is repeated infinitely.
+ */
 
