@@ -1,6 +1,6 @@
 /**
- * For some reason, at the end of class definition we need to put a semicolon. This however is not needed
- * when we define a function!
+ * For some reason, at the end of class definition we need to put a semicolon. 
+ * Note however that we don't need to do this at the end of functions of the class. 
  * 
  * We know the age old difference between classes and structs. Classes need to be sophisticated, hence 
  * every member by default has private access. 
@@ -48,8 +48,9 @@ inline void Date::add_month(int n)  //add n months
  * The static members outside the class can be accessed with the scope operator
  * */
 class A{
+public:
     static int x;
-}
+};
 
 int main(){
     int y = A::x;

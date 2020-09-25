@@ -8,14 +8,17 @@
 
 void f(int n){
     int v1[n];//error : array size not a constant expression
-    vector<int> v2(n);//OK: vector with n int elements
+    std::vector<int> v2(n);//OK: vector with n int elements
 }
 
 /** An array can be allocated statically, on the stack, and on the free store.  For example:*/
 int a1[10];//10 ints in static storage
 void f(){
     int a2[20];  //20 ints on the stack. This array is initialized to zero, because
-    int∗ p = new int[40]; //40 ints on the free store//...
+    int *p = new int[40]; //40 ints on the free store//...
+
+    int arr[3] = {1,2,3};
+    int arr2[2] = {1, 2};
 }
 
 /**
