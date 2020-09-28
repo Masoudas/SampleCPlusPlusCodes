@@ -4,8 +4,10 @@
  * Answer: When we create a new object, the copy constructor is called. The normal class x = y is an example.
  * Moreover, when we pass a class into a function, the copy constructor is called, because after all
  * we're creating a new reference. When we return an object from a function, the copy
- * constructor is called (However, if we accept reference and return a reference, the content is
- * not copied, because we're returning an accepting the object as it is in the memory.).
+ * constructor is called. Why? Because otherwise the value would be an auto variable
+ * destroyed by the memory. (However, if we accept reference and return a reference, the content is
+ * not copied, because we're returning an accepting the object as it is in the memory. In this case,
+ * we should be careful as to make something on the heap).
  * 
  * And assignment operator is a bitwise operation. For this to occur, the object being
  * assigned to must have already been initialized. Hence, x = y is possible only if x

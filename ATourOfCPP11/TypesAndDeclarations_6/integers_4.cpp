@@ -31,7 +31,7 @@
  * its value and the implementation’s integer sizes.
  * 
  * Literals have the following assignment rules:
- * 1- If a decimal has no suffic, then it's interpreted as int, long int, long long int.
+ * 1- If a decimal has no suffic, then it's interpreted as int, long int, long long int (And Not UNSIGNED!)
  * 2- If it is octal or hexadecimal and has no suffix, it has the first of these types 
  *   in which its value can be represented: int, unsigned int, long int, unsigned long int,
  *   long long int, unsigned long long int.

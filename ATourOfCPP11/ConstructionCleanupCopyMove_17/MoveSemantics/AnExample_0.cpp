@@ -6,7 +6,11 @@
  * class1{new class()}. The class on the inside would be an rvalue, hence if class1 
  * has a copy constructor, that will be used.
  * 
- * We can check this below using a Person class that uses a String class.*/
+ * We can check this below using a Person class that uses a String class.
+ * 
+ * Don't forget that besides the move constructor, we also have a move assignment. Its form is
+ * T operator=(&&T)
+ * */
 
 class String
 {
