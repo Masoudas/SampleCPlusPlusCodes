@@ -1,7 +1,10 @@
 /**
  * As we already know, for built-in types a function uses the copy semantics. The reason why is 
- * that if that value is auto, it will be destroyed when the function call ends, hence the need
- * for creating a copy. We can chain the return if two methods both return void.
+ * that if that value is auto (is on stack), it will be destroyed when the function call ends, hence the need
+ * for creating a copy.
+ * 
+ * 
+ * We can chain the return if two methods both return void.
  */
 void f();
 void g(){ return f();}
@@ -13,7 +16,7 @@ void g(){ return f();}
  * 
  * The returned value is checked against the return type of the function, and all necessary implicit and
  * explicit casts are performed.
- * double f(){return 1};    // One is cas from int to double.
+ * double f(){return 1};    // One is cast from int to double.
  */
 
 /**

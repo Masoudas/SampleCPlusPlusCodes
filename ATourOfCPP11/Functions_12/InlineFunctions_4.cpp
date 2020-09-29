@@ -4,7 +4,7 @@
 
 /**
  * The compiler can make recursive functions inline. For example consider the implementation of Fact below. A clever compiler
- * might inline this function to a certain depth (say what now?)
+ * might inline this function to a certain depth, normally up to level 7. (say what now?)
  */
 inline int Fact(int n){
     return n > 1 ? Fact(n) : 1;

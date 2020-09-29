@@ -1,6 +1,6 @@
 /**
  * By declaring a function a constant expression, we say that we want to use it in constant expressions,
- * if given constant arguments. 
+ * if given constant arguments. This can't be done with a function that is not declared constexpr
  */
 constexpr int fac(int n)
 {
@@ -67,3 +67,20 @@ void f(){
     constexpr double imaglval = COMP.imag(); //OK, static init
     complex cx3(2, 4.6); //dynamic initialization
 }
+
+/**
+ * Note that a branch that is not evaluated at compile time can have run-time association, like throwing
+ * an exception. For example:
+ * 
+ * Yeah, I don't know what that last line is, but Bjarne says: "You might imagine low and high to be configuration parameters
+ * that are known at compile time, but not at design time, and that f(x,y,z) computes some implementation-dependent value."
+ */
+constexpr int check(int i)
+{
+return (low<=i && i<high) ? i : throw out_of_range();
+}
+constexpr int low = 0;
+constexpr int high = 99;
+// ...
+constexpr int val = check(f(x,y,z));
+

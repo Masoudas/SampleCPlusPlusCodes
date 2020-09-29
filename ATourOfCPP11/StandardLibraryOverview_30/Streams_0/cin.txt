@@ -20,3 +20,7 @@ We can also say
 cin >> a >> b;	Two variables are set either using space, tab or enter.
 
 We normally prefer to use getline(cin, str) to get a line from the command line.
+
+Something that's important about cout<< is that the order of execution is from right to left. This is because 
+the << operator runs from right I guess. So for example say you have a stack like {1, 2}, writing
+cout << "First " << s.pop() << " Second " << s.pop(); pops First = 1 and Second = 2. So be cautious!
