@@ -44,7 +44,6 @@ void constructors(){
    queue1.push(2); 
    
    std::cout << "The front element of the copied queue is: " << queue1.front() << std::endl;
-
    std::cout << "The front element of the copied queue is: " << queue.front() << std::endl;
 
    std::queue<int> queue2{create_queue()}; // Now here, we're using the move assignment, because there's an rvalue involved.

@@ -1,9 +1,14 @@
 /**
  * sizeof as we know returns the size of a type in number of chars (hence size(char) = 1).
  * 
- * sizeof works with compile time information, not with runtime information. This is very important,
+ * sizeof works mostly at compile time information. This is very important,
  * as we will see below. For compile time entities, because every information about size is available,
- * sizeof returns the size of every entity in char terms.
+ * sizeof returns the size of every entity in char terms. 
+ * 
+ * The sizeof operator returns the size of a generic as well? Well, 
+ * We usually should not work with sizeof at runtime, but rather ask for size directly. For
+ * example, when using template T, we can ask for the size right away. Something like
+ * template<class T, std::size_t SIZE>. Also, look at this http://www.jonathanbeard.io/blog/2016/04/01/template-type-sizing.html
  * 
  * So here are some questions: What is the size of a pointer? As we know, the size of a pointer
  * depends on the architecture of the system and can be 4 or eight. This is equal for EVERY SINGLE 
@@ -13,6 +18,10 @@
  * For compile time sizeof(arr) returns the total number of chars an array holds for any array (1D, 2D, ...).
  * For example, 3 ints in a windows machine hold 12 chars. The expression sizeof(arr)/sizeof(arr[0]) always
  * returns the number of elements an array hold. The same expression for a 2 * 3 array returns six.
+ * 
+ * Now what about a dynamic array (generated at run-time)? In this case, when supplied with the pointer, the
+ * sizeof returns the size of the pointer, because no compile time information on size exists.
+ * 
  * 
  * Challenge: What's another way of getting the size of an array without sizeof? The answer is given below.
  * What about an n-dimensional array?
