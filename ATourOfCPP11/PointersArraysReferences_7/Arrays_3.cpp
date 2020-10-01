@@ -3,7 +3,8 @@
  * from zero to size-1.
  * 
  * Array size must be a constant expression (of course, because with arrays, we need to assign a
- * specific size in memory). For variable expressions, we need to use vectors.
+ * specific size in memory). For variable expressions, we either use new to allocate in 
+ * heap, or we need to use vectors,
  */ 
 
 void f(int n){

@@ -6,11 +6,11 @@
  * int* p2 = v + 2;
  * 
  * What's the difference between &v and v in the following expression?
- * int* p3 = &v;
+ * int (*p3)[3] = &v;
  * int* p4 = v;
  * 
  * Well as we know, the last one does an implicit conversion to pointer. The first however,
- * explicitly extracts the address to the array zeroth element.
+ * explicitly extracts the address to a pointer to array.
  * 
  * */
 
@@ -64,11 +64,13 @@ void f(){
  * to pointer occurs. Hence, the array size is lost.
  * 
  * Note that as we said, there's no copy assignment when it comes to arrays. Hence, when we
- * pass an array, it's not copied.
+ * pass an array, it's not copied (just their pointers!). Hence an array passed to a function
+ * is modified by the function.
  * 
  * The above is the most important reason why we should use std::array, std::vector or std::string,
  * because they pass on their size as well.
  */ 
+
 
 /**
  * As a point of interest we know that pointers may be integers in an of themselves. So for *T,

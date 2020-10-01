@@ -5,7 +5,7 @@
  * However, this transition is not natural for higher order arrays. In other words,
  * there's no direct conversion from a multi-dim array to pointer to pointers.
  * 
- * So for example, suppose we want to convert a 2D char array to a pointer to pointer of int. We need to
+ * So for example, suppose we want to convert a 2D char array to a pointer to pointer of char. We need to
  * manually convert it to an array of pointers (by getting the pointer to the first element
  * of each row), and then assign that to a pointer to pointer, as shown below:
  */
