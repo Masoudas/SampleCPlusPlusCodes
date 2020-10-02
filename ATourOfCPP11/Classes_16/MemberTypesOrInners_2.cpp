@@ -1,6 +1,6 @@
 /**
  * Types and type aliases can be members of a class. By types, we mean for example an
- * enum or class.
+ * enum or class. If they're public, they can be accessed via scope operator.
  * 
  * A nested class has access to members of the outside class, including private, IF PASSED
  * A REFERENCE OF THE ENCLOSING CLASS. Otherwise, it just has access to the types and
@@ -15,6 +15,7 @@
 
 template<typename T>
 class Tree {
+public: 
     using value_type = T;//member alias
     enum Policy { rb, splay, treeps }; //member enum
     class Node {//member class
@@ -29,7 +30,7 @@ class Tree {
 };
 
 template<typename T>
-void Tree::Node::f(Tree *p){    // Ok. Double scope here!
+void Tree<T>::Node::f(Tree *p){    // Ok. Double scope here!
     // top = right; //error : no object of type Tree specified
     p->top = right;//OK 
     value_type v = left->value;               //OK: value_type is not associated with an object
