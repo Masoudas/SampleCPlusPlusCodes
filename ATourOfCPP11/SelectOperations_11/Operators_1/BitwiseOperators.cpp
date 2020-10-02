@@ -11,6 +11,9 @@
  * we should use set or bitset.
  * 
  * As we know, we can compute the bit content of integral value using bitwise operations.
+ * 
+ * How not to confuse ~ and bit? Remember that != is used as a logical operator. Hence, ! is logical, hence ~ is bitwise.
+ * Don't forget that with bool however, YOU MUST USE !. Why? Because bool is a logical value, not a bit value!!!
  */
 constexpr unsigned short calculateMiddle16Bits(int val){
     static_assert(sizeof(int) == 4, "Int is not 32 bit");

@@ -2,6 +2,23 @@
  * The post increment operator (i++) is more resource consuming that pre-increment (++i).
  * This is because post increment operator creates a copy of the variable, then adds to it,
  * which is not the case for pre-increment. Hence, where possible, we use pre-increment.
+ * Why do we create a temporary with post-fix? Because in the current expression, we're still
+ * using the same value (not the augmented one). Hence, overloading the increment and decrement
+ * looks something like this:
+ MyOwnClass& operator++()
+ {
+   ++meOwnField;
+   return (*this);
+ }
+
+ MyOwnClass operator++(int)
+ {
+  MyOWnCLass tmp = *this;
+  ++(*this);
+  return tmp;
+ }
+ * 
+ * 
  * Moreover, most compilers substitute post with pre increment operator when possible.
  * 
  * We also know that ++ can be used with pointers!

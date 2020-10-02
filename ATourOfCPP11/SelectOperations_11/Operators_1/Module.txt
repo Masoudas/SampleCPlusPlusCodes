@@ -1,1 +1,0 @@
-The module operator returns the remainder of a value in the range between [-n + 1, n - 1].
