@@ -1,6 +1,9 @@
 /**
  * As we already know, a function cannot be called unless it has already been declared.
  * 
+ * A function's signature includes the function's name and the number, order and type of its formal parameters. 
+ * Two overloaded functions must not have the same signature. The return value is not part of a function's signature
+ * 
  * The semantics of argument passing are the same as copy assignment (Me: if this is a built-in type,
  * a copy constructor is called.) Moreover, implicit conversions take place when necessary.
  * 

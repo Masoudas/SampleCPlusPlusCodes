@@ -1,4 +1,7 @@
 /**
+ * First off, note that array pointer is a constant pointer, hence an expression like arr++ is 
+ * incorrect (naturally of course).
+ * 
  * We have the basic assignments:
  * int v[] = {1, 2, 3, 4};
  * int* p = v;

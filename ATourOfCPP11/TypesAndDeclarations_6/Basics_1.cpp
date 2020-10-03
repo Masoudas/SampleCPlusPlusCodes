@@ -14,3 +14,4 @@
  * const int size = 1024;
  * int a[] = new int[size];
  * a[size + size] = 10; // Undefined behavior, no exception is thrown.
+ */
