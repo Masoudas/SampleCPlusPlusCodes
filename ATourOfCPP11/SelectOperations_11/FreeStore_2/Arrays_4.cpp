@@ -1,5 +1,7 @@
 /**
  * As we know, new T[] and delete[] T are used for creating and deleting array like objects.
+ * 
+ * In other words, T[] returns a T* (pointer to array), not pointer to pointer :D
  */
 #include <string>
 

@@ -4,7 +4,7 @@
  * 
  * short is guaranteed at least 16 bits, long at least 32 bits.
  * 
- * Default value is a suitable representation of zero for all types.
+ * Default value is a suitable representation of zero for all types (when used with bracket notion for example.)
  *  
  * Note that short is a synonym for short int.
  * unsigned is sysnonym fir unsigned int, and singed for signed int.
@@ -38,3 +38,13 @@
  * 3- If it has u suffix, then unsigned int, unsigned long int or unsigned long long int.
  * the rules don't stop here!
  */
+#include <iostream>
+using namespace std;
+int main(){
+    char x{};   // Initialized to zero
+    int y{};    // Initialized to zero
+
+    char x; // Initialized to what is in the memory (stack).
+    
+
+}
