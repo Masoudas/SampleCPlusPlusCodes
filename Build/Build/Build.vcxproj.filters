@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Build\Build.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Build\Build.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Build\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E5E8EBA9-A013-3C36-B2CA-0F949D243BB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0BCF6A8B-E1BA-34E8-8E50-7BBB8E749741}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

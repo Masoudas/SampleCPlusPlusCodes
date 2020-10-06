@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ATourOfCPP11\Basics_1\Fundamentals_1.cpp">
+      <Filter>Source Files\ATourOfCPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0BCF6A8B-E1BA-34E8-8E50-7BBB8E749741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ATourOfCPP">
+      <UniqueIdentifier>{d935e2d4-8407-46aa-8c60-4ea656e2e99f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

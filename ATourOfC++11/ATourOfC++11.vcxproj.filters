@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\STLStrings_36">
+      <UniqueIdentifier>{db146765-61b1-4199-bae7-068ca57790ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STLStrings_36\StringClass_2">
+      <UniqueIdentifier>{28e494b0-f982-4d72-b7a2-7329b9b22bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STLStrings_36\StringClass_2\Operations">
+      <UniqueIdentifier>{4af20ef8-64db-4d86-be64-00f335a27d79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="STLStrings_36\CharacterClassification_2.cpp">
+      <Filter>Source Files\STLStrings_36</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\CharacterTraits_3.cpp">
+      <Filter>Source Files\STLStrings_36</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\LibraryModules_1.cpp">
+      <Filter>Source Files\STLStrings_36</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\Literals_0.cpp">
+      <Filter>Source Files\STLStrings_36</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Constructors_3.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\MaximumSize_4.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\StringsVsCStyleStrings_2.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\Fundamentals_1.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\basic_string_class_1.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\2_Resizing.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\3_IO_Operations.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\4_Numerical_Conversion.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\5_Iterators.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

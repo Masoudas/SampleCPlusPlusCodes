@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/sharbaf/source/repos/SampleCPlusPlusCodes
+# Install script for directory: C:/Users/Masoud/Documents/SampleCPlusPlusCodes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/sharbaf/source/repos/SampleCPlusPlusCodes/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,9 +32,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/build/x64-Debug/SampleCPlusPlusCodes.exe")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/src" TYPE FILE FILES "C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Main.cpp")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/sharbaf/source/repos/SampleCPlusPlusCodes/out/build/x64-Debug/CMakeProject/cmake_install.cmake")
+  include("C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/build/x64-Debug/Build/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/sharbaf/source/repos/SampleCPlusPlusCodes/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

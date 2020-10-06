@@ -1,0 +1,15 @@
+First off, in VSCode we can install the CMake extension to help with the syntax.
+
+Essentially, we need two things:
+1- A main.cpp, where the code will start from
+2- A CMakeLists.txt, that holds the essential commands of CMAKE.
+
+So the content of the lists file:
+Version line: Indicates the version required to compile the cmake project.
+How can we get CMake version in VS? Well, the path to CMake is at this:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft
+For the version, I couldn't find anything in VS. I had to use the internet.
+
+
+
+

@@ -1,0 +1,2 @@
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/install/x64-Debug/bin/SampleCPlusPlusCodes.exe
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/out/install/x64-Debug/src/Main.cpp

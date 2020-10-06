@@ -1,0 +1,6 @@
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/CMakeFiles/SampleCPlusPlusCodes.dir
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/CMakeFiles/INSTALL.dir
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/Build/CMakeFiles/Build.dir
+C:/Users/Masoud/Documents/SampleCPlusPlusCodes/Build/Build/CMakeFiles/INSTALL.dir
