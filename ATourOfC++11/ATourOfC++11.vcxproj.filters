@@ -22,6 +22,12 @@
     <Filter Include="Source Files\STLStrings_36\StringClass_2\Operations">
       <UniqueIdentifier>{4af20ef8-64db-4d86-be64-00f335a27d79}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Classes_16">
+      <UniqueIdentifier>{55c40fc0-a0db-4d80-b57e-c1feaf5d6b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes_16\StaticKeyword_7">
+      <UniqueIdentifier>{5ff70397-cca6-4e73-96d7-1425dcfe982c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="STLStrings_36\CharacterClassification_2.cpp">
@@ -45,9 +51,6 @@
     <ClCompile Include="STLStrings_36\StringClass_2\StringsVsCStyleStrings_2.cpp">
       <Filter>Source Files\STLStrings_36\StringClass_2</Filter>
     </ClCompile>
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\Fundamentals_1.cpp">
-      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -64,6 +67,30 @@
       <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
     </ClCompile>
     <ClCompile Include="STLStrings_36\StringClass_2\Operations\5_Iterators.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes_16\StaticKeyword_7\2_Static_Initialization_Is_Odd.cpp">
+      <Filter>Source Files\Classes_16\StaticKeyword_7</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes_16\StaticKeyword_7\Basics_1.cpp">
+      <Filter>Source Files\Classes_16\StaticKeyword_7</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\6_SubStrings.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\7_SubStrings.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\8_Insertion.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\10_Replacement.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\1_Fundamentals.cpp">
+      <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="STLStrings_36\StringClass_2\Operations\9_Assignment.cpp">
       <Filter>Source Files\STLStrings_36\StringClass_2\Operations</Filter>
     </ClCompile>
   </ItemGroup>

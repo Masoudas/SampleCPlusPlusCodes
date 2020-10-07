@@ -1,14 +1,42 @@
-First off, in VSCode we can install the CMake extension to help with the syntax.
+First off, in VSCode we can install the CMake extension to help with the syntax. 
+
+We will assume that the goal of this make is to create an executable. What CMake does (particularly through the install
+command) is that not only will it generate the executable we need, but also puts it where it should go (namely Program Files (x86)
+in Windows, and perhaps the lib folders in Linux).
+
+Of course to create the executable, we need to specify which file contains it (which will be done through the add_executable
+command of CMake).
+
+Every path to every file can be determined using the "${PROJECT_NAME}". Note that:
+1-	${} is the structure for defining variables in CMake.
+2-	We put the quotation marks so that if the path has space it will be read coherently.
+3-	PROJECT_NAME has the same as the project root folder. This is the folder where CMakeLists.txt is placed.
+
+DON'T Confuse project root folder with project name. project_name command gives a name to this project. In Windows,
+this name would be given to the solution as well. Moreover, the executable (and the folder it's put in Program Files (x86))
+would have the same name as this one.
+
 
 Essentially, we need two things:
 1- A main.cpp, where the code will start from
 2- A CMakeLists.txt, that holds the essential commands of CMAKE.
 
 So the content of the lists file:
-Version line: Indicates the version required to compile the cmake project.
-How can we get CMake version in VS? Well, the path to CMake is at this:
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft
-For the version, I couldn't find anything in VS. I had to use the internet.
+
+Version line: 
+		Indicates the version required to compile the cmake project. How can we get CMake version in VS? 
+	Well, the path to CMake is at this: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft
+	For the version, I couldn't find anything in VS. I had to use the internet.
+
+add_executable:
+		We're declaring which file contains our main method here. As we said, we can do so using the ${PROJECT_NAME}. Note that
+	we can or cannot use a dash here, saying "${PROJECT_NAME}" "/Main.cpp". But "${PROJECT_NAME}/Main.cpp" is not correct.
+
+install:
+		Installs WHATEVER WE ASK IT TO to the BUILD DESTINATION. Build destination in my Windows machine is where all the 
+	programs are, which is Program Files (x86). ???
+
+
 
 
 

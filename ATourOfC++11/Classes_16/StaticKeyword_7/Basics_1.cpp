@@ -12,7 +12,7 @@
  * default_date and don't assign a default to it, we'll get an error. Hence,
  * DEFINITION OF STATIC IS NOT INITIALIZATION. 
  * The definition for a static data member shall appear in a namespace scope 
- * enclosing the member’s class definition
+ * enclosing the member’s class definition (See _2 of here).
  * 
  * We can access a static member or function using the object, or using the scope
  * operator (like Date::set_default). The latter is preferable.
@@ -24,7 +24,7 @@ class Date {
     int d, m, y;
     static Date default_date;
 public:
-    Date(int dd =0, int mm =0, int yy =0);
+    Date(int dd = 0, int mm = 0, int yy = 0) {};
     static void set_default(int dd, int mm, int yy); //set default_date to Date(dd,mm,yy)
 };
 
@@ -49,11 +49,12 @@ void g(){
 
  void f1(Date);
  void f2(Date);
- void f2(int);
+ void f2(int);  // Overloading f2.
+
  void g(){
-     f1({});                //OK: equivalent to f1(Date{}).
-     f2({});                //error : ambiguous: f2(int) or f2(Date)? See _11_5_2
-     f2(Date{});         //OK
+     // f1({});                //OK: equivalent to f1(Date{}).
+     // f2({});                //error : ambiguous: f2(int) or f2(Date)? See _11_5_2
+     // f2(Date{});         //OK
  }
 
  /**

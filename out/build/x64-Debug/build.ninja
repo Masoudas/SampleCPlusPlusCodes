@@ -77,6 +77,48 @@ build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass
   TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
   TARGET_PDB = SampleCPlusPlusCodes.pdb
 
+build CMakeFiles\SampleCPlusPlusCodes.dir\CMake\MeaningOfBuild_1.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\CMake\MeaningOfBuild_1.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\CMake
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
+build CMakeFiles\SampleCPlusPlusCodes.dir\SedgewickAlgorithm\Chapter_II\MergeSort_II\Recursive_Merge_Sort.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\SedgewickAlgorithm\Chapter_II\MergeSort_II\Recursive_Merge_Sort.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\SedgewickAlgorithm\Chapter_II\MergeSort_II
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
+build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\6_SubStrings.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\ATourOfC++11\STLStrings_36\StringClass_2\Operations\6_SubStrings.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
+build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\7_SubStrings.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\ATourOfC++11\STLStrings_36\StringClass_2\Operations\7_SubStrings.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
+build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\8_Insertion.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\ATourOfC++11\STLStrings_36\StringClass_2\Operations\8_Insertion.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
+build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\10_Replacement.cpp.obj: CXX_COMPILER__SampleCPlusPlusCodes_Debug ..\..\..\ATourOfC++11\STLStrings_36\StringClass_2\Operations\10_Replacement.cpp || cmake_object_order_depends_target_SampleCPlusPlusCodes_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\SampleCPlusPlusCodes.dir
+  OBJECT_FILE_DIR = CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations
+  TARGET_COMPILE_PDB = CMakeFiles\SampleCPlusPlusCodes.dir\
+  TARGET_PDB = SampleCPlusPlusCodes.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SampleCPlusPlusCodes
@@ -85,7 +127,7 @@ build CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass
 #############################################
 # Link the executable SampleCPlusPlusCodes.exe
 
-build SampleCPlusPlusCodes.exe: CXX_EXECUTABLE_LINKER__SampleCPlusPlusCodes_Debug CMakeFiles\SampleCPlusPlusCodes.dir\Main.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\3_IO_Operations.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\4_Numerical_Conversion.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\5_Iterators.cpp.obj
+build SampleCPlusPlusCodes.exe: CXX_EXECUTABLE_LINKER__SampleCPlusPlusCodes_Debug CMakeFiles\SampleCPlusPlusCodes.dir\Main.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\3_IO_Operations.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\4_Numerical_Conversion.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\5_Iterators.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\CMake\MeaningOfBuild_1.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\SedgewickAlgorithm\Chapter_II\MergeSort_II\Recursive_Merge_Sort.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\6_SubStrings.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\7_SubStrings.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\8_Insertion.cpp.obj CMakeFiles\SampleCPlusPlusCodes.dir\ATourOfC++11\STLStrings_36\StringClass_2\Operations\10_Replacement.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

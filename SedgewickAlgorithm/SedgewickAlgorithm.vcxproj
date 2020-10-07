@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cd01b1d4-8f9e-4db6-8621-36eeebd1fd25}</ProjectGuid>
-    <RootNamespace>ATourOfC11</RootNamespace>
+    <ProjectGuid>{16a594a9-c3a0-4d65-a0d4-265e377d4b7f}</ProjectGuid>
+    <RootNamespace>SedgewickAlgorithm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,27 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Classes_16\StaticKeyword_7\2_Static_Initialization_Is_Odd.cpp" />
-    <ClCompile Include="Classes_16\StaticKeyword_7\Basics_1.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="STLStrings_36\CharacterClassification_2.cpp" />
-    <ClCompile Include="STLStrings_36\CharacterTraits_3.cpp" />
-    <ClCompile Include="STLStrings_36\LibraryModules_1.cpp" />
-    <ClCompile Include="STLStrings_36\Literals_0.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\basic_string_class_1.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Constructors_3.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\MaximumSize_4.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\10_Replacement.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\1_Fundamentals.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\2_Resizing.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\3_IO_Operations.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\4_Numerical_Conversion.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\5_Iterators.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\6_SubStrings.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\7_SubStrings.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\8_Insertion.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\Operations\9_Assignment.cpp" />
-    <ClCompile Include="STLStrings_36\StringClass_2\StringsVsCStyleStrings_2.cpp" />
+    <ClCompile Include="Chapter_II\MergeSort_II\Recursive_Merge_Sort.cpp" />
+    <ClCompile Include="ThinkCell1.cpp" />
+    <ClCompile Include="ThinkCell2.cpp" />
+    <ClCompile Include="ThinkCell3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

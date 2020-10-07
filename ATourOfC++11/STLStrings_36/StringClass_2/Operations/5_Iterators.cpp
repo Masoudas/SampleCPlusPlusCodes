@@ -30,7 +30,4 @@ void using_string_iterators_basics() {
 
 }
 
-int main() {
-	using_string_iterators_basics();
-}
 

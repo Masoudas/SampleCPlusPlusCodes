@@ -305,8 +305,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\ATourOfCPP11\Basics_1\Fundamentals_1.cpp" />
     <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Main.cpp" />
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\ATourOfC++11\STLStrings_36\StringClass_2\Operations\3_IO_Operations.cpp" />
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\ATourOfC++11\STLStrings_36\StringClass_2\Operations\4_Numerical_Conversion.cpp" />
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\ATourOfC++11\STLStrings_36\StringClass_2\Operations\5_Iterators.cpp" />
+    <ClCompile Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\CMake\MeaningOfBuild_1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Masoud\Documents\SampleCPlusPlusCodes\Build\ZERO_CHECK.vcxproj">
